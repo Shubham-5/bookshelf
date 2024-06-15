@@ -1,11 +1,15 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-around items-center h-16">
-      <h2>BookShelf</h2>
+    <div className="flex justify-between items-center h-16">
+      <h2 className="font-semibold">BookShelf</h2>
 
-      <h2>My BookShelf</h2>
+      <Link to="/bookshelf">
+        <h2 className="text-sm font-semibold text-gray-600 hover:text-gray-800">
+          My BookShelf
+        </h2>
+      </Link>
     </div>
   );
 };

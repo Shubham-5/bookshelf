@@ -6,9 +6,9 @@ import Navbar from "./components/Navbar";
 
 const Layout = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="max-w-lg mx-auto">
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/bookshelf" element={<MyBookshelf />} />
